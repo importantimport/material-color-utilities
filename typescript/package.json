@@ -21,20 +21,37 @@
     "url": "https://github.com/importantimport/material-color-utilities/issues"
   },
   "homepage": "https://github.com/importantimport/material-color-utilities/tree/main/typescript",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
-    "dist/**/*"
+    "dist"
   ],
+  "unbuild": {
+    "entries": [
+      "./index"
+    ],
+    "clean": true,
+    "declaration": true,
+    "rollup": {
+      "emitCJS": true
+    }
+  },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "build": "tsc",
-    "watch": "tsc -w"
+    "build": "unbuild",
+    "watch": "unbuild --stub"
   },
   "devDependencies": {
     "@types/jasmine": "^3.10.6",
     "jasmine": "^4.0.2",
-    "typescript": "^4.5.5"
+    "unbuild": "^0.8.8"
   }
 }
