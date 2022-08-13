@@ -33,7 +33,7 @@
     "watch": "tsc -w"
   },
   "devDependencies": {
-    "@types/jasmine": "^3.10.3",
+    "@types/jasmine": "^3.10.6",
     "jasmine": "^4.0.2",
     "typescript": "^4.5.5"
   }
