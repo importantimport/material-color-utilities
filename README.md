@@ -1,6 +1,10 @@
 # [@importantimport/material-color-utilities](typescript/)
 
-A fork of [@material/material-color-utilities](https://github.com/material-foundation/material-color-utilities/tree/main/typescript) to fix bugs and add functionality.
+![npm](https://img.shields.io/npm/v/@importantimport/material-color-utilities)
+![minified size](https://img.shields.io/bundlephobia/min/@importantimport/material-color-utilities)
+![downloads](https://img.shields.io/npm/dt/@importantimport/material-color-utilities)
+
+A fork of [@material/material-color-utilities](https://github.com/material-foundation/material-color-utilities/tree/main/typescript) to fix bugs and add features.
 
 ## Major changes
 
