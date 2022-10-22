@@ -1,5 +1,5 @@
 {
-  "name": "@material/material-color-utilities",
+  "name": "@importantimport/material-color-utilities",
   "version": "0.2.0",
   "type": "module",
   "description": "Algorithms and utilities that power the Material Design 3 (M3) color system, including choosing theme colors from images and creating tones of colors; all in a new color space.",
@@ -13,32 +13,45 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/material-foundation/material-color-utilities.git",
+    "url": "https://github.com/importantimport/material-color-utilities.git",
     "directory": "typescript"
   },
-  "author": "Material Eng",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/material-foundation/material-color-utilities/issues"
+    "url": "https://github.com/importantimport/material-color-utilities/issues"
   },
-  "homepage": "https://github.com/material-foundation/material-color-utilities/tree/main/typescript",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "dist/index.d.ts",
+  "homepage": "https://github.com/importantimport/material-color-utilities/tree/dev/typescript",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
-    "dist/**/*"
+    "dist"
   ],
+  "unbuild": {
+    "entries": [
+      "./index"
+    ],
+    "clean": true,
+    "declaration": true,
+    "rollup": {
+      "emitCJS": true
+    }
+  },
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "prepublishOnly": "npm run build"
+    "preinstall": "npx only-allow pnpm",
+    "build": "unbuild",
+    "watch": "unbuild --stub"
   },
   "devDependencies": {
-    "@types/jasmine": "^3.10.3",
+    "@types/jasmine": "^3.10.6",
     "jasmine": "^4.0.2",
-    "typescript": "^4.5.5"
-  },
-  "publishConfig":{
-    "registry":"https://wombat-dressing-room.appspot.com"
+    "unbuild": "^0.9.4"
   }
 }
