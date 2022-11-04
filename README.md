@@ -6,6 +6,4 @@ This repository maintains only the TypeScript version: [`@importantimport/materi
 
 Go to [Package README](/typescript/README.md) for more information.
 
-## Major changes
-
 - Use unbuild instead of tsc, fix [#35](https://github.com/material-foundation/material-color-utilities/issues/35) and provide CommonJS support
