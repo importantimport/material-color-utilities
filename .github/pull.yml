@@ -1,0 +1,14 @@
+version: "1"
+rules:
+  - base: main
+    upstream: material-foundation:main
+    mergeMethod: hardreset
+    mergeUnstable: false
+  - base: dev
+    upstream: main
+    assignees:
+      - kwaa
+    reviewers:
+      - kwaa
+    conflictReviewers:
+      - kwaa
