@@ -228,7 +228,7 @@ export class Scheme {
       error: core.error.tone(80),
       onError: core.error.tone(20),
       errorContainer: core.error.tone(30),
-      onErrorContainer: core.error.tone(80),
+      onErrorContainer: core.error.tone(90),
       background: core.n1.tone(10),
       onBackground: core.n1.tone(90),
       surface: core.n1.tone(10),
