@@ -1,4 +1,4 @@
-# Material color utilities
+# Material Color Utilities
 
 A fork of [`@material/material-color-utilities`](https://github.com/material-foundation/material-color-utilities/tree/main/typescript) to fix bugs and add features.
 
