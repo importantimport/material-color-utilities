@@ -33,3 +33,11 @@ export * from './utils/math_utils.js';
 export * from './utils/string_utils.js';
 export * from './utils/image_utils.js';
 export * from './utils/theme_utils.js';
+
+export * from './scheme/scheme_neutral.js';
+export * from './scheme/scheme_expressive.js';
+export * from './scheme/scheme_monochrome.js';
+export * from './scheme/scheme_tonal_spot.js';
+export * from './scheme/scheme_vibrant.js';
+export * from './dynamiccolor/material_dynamic_colors.js';
+export * from './scheme/variant.js';
