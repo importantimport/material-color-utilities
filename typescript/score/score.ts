@@ -64,7 +64,7 @@ export class Score {
     // record the proportion of colors for each CAM16 hue.
     const colorsToProportion = new Map<number, number>();
     const colorsToCam = new Map<number, Cam16>();
-    const hueProportions = new Array<number>(360).fill(0);
+    const hueProportions = new Array<number>(361).fill(0);
     for (const [color, population] of colorsToPopulation.entries()) {
       const proportion = population / populationSum;
       colorsToProportion.set(color, proportion);
