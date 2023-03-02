@@ -46,6 +46,7 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "remove-build": "rm -rf dist",
     "build": "unbuild",
     "watch": "unbuild --stub"
   },
