@@ -1,5 +1,9 @@
 # Material Color Utilities
 
+> This package is deprecated, please use [`@material/material-color-utilities`](https://github.com/material-foundation/material-color-utilities) and [`mcu-extra`](https://github.com/importantimport/mcu-extra)
+
+---
+
 A fork of [`@material/material-color-utilities`](https://github.com/material-foundation/material-color-utilities/tree/main/typescript) to fix bugs and (maybe) add features.
 
 This repository maintains only the TypeScript version: [`@importantimport/material-color-utilities`](https://github.com/importantimport/material-color-utilities/tree/dev/typescript)
